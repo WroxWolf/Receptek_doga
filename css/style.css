@@ -9,6 +9,16 @@ body {
     font-family: georgia;
     background: url('../pics/bg-body.png') #fff;
 }
+.wrapper{
+    max-width: 1200px;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    flex: 70%;
+    order: 2;
+}
 h1{
     color:limegreen;
     font-family: 'Lobster', cursive;
@@ -35,7 +45,7 @@ nav li{
     list-style: none;
     margin: 10px;
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 nav a{
     text-decoration: none;
@@ -43,17 +53,55 @@ nav a{
 }
 .content{
     display: flex;
+    flex-flow: row nowrap;
+}
+.recipes{
+    display: flex;
+    flex-flow: row wrap;
 }
 .recipe-box{
     border: 1px solid gray;
-    width: 350px;
-    height: 350px;
+    width: 300px;
     margin: 40px 0px 0px 13px;
-    float: left;
-}
-.recipes{
-    justify-content: center;
+    background-color: white;
+    flex-grow: 1;
 }
 .recipe-box img{
-    width: 350px;
+    width:100%;
+}
+aside{
+    flex: 30%;
+    order: 1;
+}
+ aside ul{
+    margin: 40px auto;
+    padding: 10px;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    background: rgba(0, 0, 0, 0.4);
+}
+aside li{
+    list-style: none;
+    border-bottom: 1px dashed white;
+}
+aside a{
+    text-decoration: none;
+    color:black;
+    text-align: left;
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+.page{
+    display:inline-block;
+    border: 1px solid black;
+    padding: 2px;
+    margin: 10px auto;
+}
+.pagination span{
+    background:gray;
+}
+.pagination a{
+    background:gray;
+    color: white;
+    text-decoration: none;
 }
