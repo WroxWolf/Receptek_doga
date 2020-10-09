@@ -49,7 +49,12 @@ nav li{
 }
 nav a{
     text-decoration: none;
+    padding: 5px;
     color:white;
+
+}
+nav a:hover{
+    background: rgba(0, 0, 0, 0.4);
 }
 .content{
     display: flex;
@@ -78,11 +83,12 @@ aside{
     padding: 10px;
     justify-content: flex-start;
     flex-flow: column wrap;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.1);
 }
 aside li{
     list-style: none;
     border-bottom: 1px dashed white;
+    margin-bottom: 10px;
 }
 aside a{
     text-decoration: none;
@@ -101,7 +107,10 @@ aside a{
     background:gray;
 }
 .pagination a{
-    background:gray;
+    background:rgba(0, 0, 0, 0.3);
     color: white;
     text-decoration: none;
+}
+.pagination a:hover{
+    background: rgba(0, 0, 0, 0.5);
 }
